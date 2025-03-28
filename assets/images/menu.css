@@ -1,0 +1,179 @@
+/* HEADER */
+#wrap > header {background-color: #333;padding-bottom: 20px;}
+.logo {	display: inline-block;font-size: 0;	/*padding-top:15px;*/}
+.logo img{/*width: 10.27%;*/ z-index: 9999; position: absolute;}
+#navigation {/*position: absolute;*/right: 40px;bottom: 0px;}
+#menu-toggle {display: none;float: right;}
+
+/* HEADER > MENU */
+#main-menu {float: right;font-size: 0;margin: 25px 0;}
+#main-menu > li {display: inline-block;	margin-left: 30px;	padding: 2px 0;}
+#main-menu > li.parent {background-image: url(/web/20170715195436im_/http://www.ippai.org/images/plus-gray.png);	background-size: 7px 7px;	background-repeat: no-repeat;background-position: left center;}
+#main-menu > li.parent > a {padding-left: 14px;}
+#main-menu > li > a {color: #acb4b6;font-size: 13px;line-height: 14px;padding: 25px 0 35px 0px;text-decoration:none;font-weight: 700;}
+#main-menu > li > a  span{display:none;}
+#main-menu > li:hover > a,
+#main-menu > li.current-menu-item > a {	color: #f55858;}
+
+/* HEADER > MENU > DROPDOWN */
+#main-menu li {
+	position: relative;
+}
+
+ul.sub-menu { /* level 2 */
+	display: none;
+	left: 0px;
+	top: 53px;
+	padding-top: 29px;
+	position: absolute;
+	min-width: 200px;
+	z-index: 9999;
+	background-color:#E5E7E8;
+	padding-bottom: 20px;
+}
+
+ul.sub-menu ul.sub-menu { /* level 3+ */
+	margin-top: -1px;
+	padding-top: 0;
+	left: 149px;
+	top: 0px;
+}
+
+ul.sub-menu > li > a {
+	background-color: #E5E7E8;
+	/*border: 1px solid #f55858;*/
+	border-top: none;
+	color: #5a6266;
+	display: block;
+	font-size: 12px;
+	line-height: 0px;
+	padding: 15px 32px;
+	font-weight: 300;
+	
+}
+
+ul.sub-menu > li > a:hover {
+	
+	color: #f55858;
+	
+	text-decoration:none;
+}
+ul.sub-menu > li:first-child {
+	/*border-top: 1px solid #f55858;*/
+}
+
+ul.sub-menu ul.sub-menu > li:first-child {
+	/*border-top: 1px solid #444;*/
+	margin-left: 50px;
+    padding-top: 5px;
+    height: 20px;
+}
+
+ul.sub-menu > li:last-child > a {
+	border-radius: 0 0 2px 2px;
+}
+
+ul.sub-menu > li > a.parent {
+	background-image: url(/web/20170715195436im_/http://www.ippai.org/images/arrow.png);
+	background-size: 5px 9px;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+#main-menu li:hover > ul.sub-menu {
+	display: block; /* show the submenu */
+}
+
+/*@media all and (max-width: 700px) {*/
+@media all and (max-width: 992px) {    
+
+	#navigation {
+		position: static;
+		margin-top: 120px;
+	}
+	#main-menu > li > a  span{display:block;}
+    .logo img{width: 100%;position: inherit;}
+	#menu-toggle {
+		display: block;
+	}
+
+	#main-menu {
+		display: none;
+		float: none;
+	}
+
+	#main-menu li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	#main-menu > li {
+		margin-top: -1px;
+	}
+
+	#main-menu > li:first-child {
+		margin-top: 0;
+	}
+
+	#main-menu > li > a {
+		background-color: #fff;
+		border: 1px solid #f55858;
+		color: #bbb;
+		display: block;
+		font-size: 14px;
+		padding: 12px !important;
+		padding: 0;
+	}    
+	#main-menu li > a:hover {
+		background-color: #f1f1f1; 
+	}
+
+	#main-menu > li.parent {
+		background: none !important;
+		padding: 0;
+	}
+
+	#main-menu > li:hover > a,
+	#main-menu > li.current-menu-item > a {
+		border: 1px solid #23dbdb !important;		
+	}
+
+	ul.sub-menu {
+		display: none;
+		margin-top: -1px;
+		/*margin-left: 20px;*/
+		position: static;
+		padding: 0;
+		width: inherit;
+	}
+    ul.sub-menu li { border-bottom: 1px solid #f55858;border-left: 1px solid #f55858;border-right: 1px solid #f55858;background-color:#fff; }
+	ul.sub-menu > li:first-child {
+		border-top: 1px solid #f55858 !important;
+	}
+
+	ul.sub-menu > li > a.parent {
+		/*background: #333 !important;*/
+	}
+}
+
+/*
+     FILE ARCHIVED ON 19:54:36 Jul 15, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:32:30 Mar 11, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 2.499
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.009
+  esindex: 0.01
+  cdx.remote: 9.097
+  LoadShardBlock: 91.201 (3)
+  PetaboxLoader3.datanode: 85.745 (4)
+  load_resource: 118.712
+  PetaboxLoader3.resolve: 42.547
+*/
