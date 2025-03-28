@@ -1,0 +1,45 @@
+<header class="nav-bar-2 w-nav">
+  <div class="nav-container">
+    <!-- Logo -->
+    <div class="logo-div">
+      <a routerLink="/home" class="nav-logo w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/663f16f5cbca3090adfc1da9/663f1ab1d85cd43ed115be13_logo.png"
+          width="120" alt="IPPAI Logo" class="logo-2 ippai">
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-content-2 w-nav-menu" [class.menu-open]="isMenuOpen">
+      <div class="nav-menu">
+        <a routerLink="/home" routerLinkActive="w--current" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link-2 w-nav-link">Home</a>
+
+        <!-- About Us with Submenu -->
+        <div class="nav-item dropdown">
+          <a routerLinkActive="w--current" class="nav-link-2 w-nav-link">About</a>
+          <div class="dropdown-menu">
+            <a routerLink="/about" class="dropdown-item">About Us</a>
+            <a routerLink="/mission-vision" class="dropdown-item">Mission and Vision</a>
+            <a routerLink="/advisory-board" class="dropdown-item">Advisory Board Members</a>
+          </div>
+        </div>
+
+        <a routerLink="/event" routerLinkActive="w--current" class="nav-link-2 w-nav-link">Events</a>
+        <a routerLink="/IRPRI" routerLinkActive="w--current" target="_blank" class="nav-link-2 w-nav-link">IRPRI</a>
+        <a routerLink="/rpr" routerLinkActive="w--current" target="_blank" class="nav-link-2 w-nav-link">RPR</a>
+        <a routerLink="/podcast" routerLinkActive="w--current" class="nav-link-2 w-nav-link">Podcast</a>
+      </div>
+
+      <div class="nav-cta-button-container">
+        <a routerLink="/contact" routerLinkActive="w--current" class="nav-link-2 cta-button w-nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <div class="menu-button w-nav-button" (click)="toggleMenu()">
+      <img src="https://uploads-ssl.webflow.com/663f16f5cbca3090adfc1da9/663f16f5cbca3090adfc1e39_Menu%20Icon.svg"
+        class="menu-icon">
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>

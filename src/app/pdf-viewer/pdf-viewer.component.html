@@ -1,0 +1,8 @@
+<div class="pdf-container">
+    <iframe 
+      *ngIf="pdfUrl"
+      [src]="pdfUrl | safeUrl"
+      frameborder="0">
+    </iframe>
+  </div>
+  

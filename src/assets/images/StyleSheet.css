@@ -1,0 +1,48 @@
+#slideshow15
+        {
+            position: relative;
+            margin-top: 0px;
+            display: block;
+            text-align: center;
+            height: 200px;
+            overflow: hidden;
+           
+        }
+        #slideshow15 li
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            opacity: 0.0;
+             background-color:#B7AD70
+        }
+        #slideshow15 li.active
+        {
+            z-index: 10;
+            opacity: 1.0;
+        }
+        #slideshow15 li.last-active
+        {
+            z-index: 9;
+        }
+/*
+     FILE ARCHIVED ON 19:59:30 Jul 15, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:32:30 Mar 11, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.37
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.009
+  esindex: 0.01
+  cdx.remote: 5.812
+  LoadShardBlock: 169.629 (3)
+  PetaboxLoader3.datanode: 154.614 (4)
+  load_resource: 261.56
+  PetaboxLoader3.resolve: 218.34
+*/

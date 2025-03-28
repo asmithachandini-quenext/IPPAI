@@ -1,0 +1,24 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .document-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .document-list li {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  

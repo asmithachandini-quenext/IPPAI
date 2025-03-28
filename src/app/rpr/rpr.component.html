@@ -1,0 +1,687 @@
+<header class="nav-bar-2 w-nav">
+  <div class="nav-container">
+    <div class="logo-div">
+      <a routerLink="/home" class="nav-logo w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/663f16f5cbca3090adfc1da9/663f1ab1d85cd43ed115be13_logo.png"
+          width="120" alt="IPPAI Logo" class="logo-2 ippai">
+      </a>
+    </div>
+
+    <nav class="nav-content-2 w-nav-menu">
+      <div class="nav-menu">
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('about')">About</a>
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('speakers')">Speakers</a>
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('agenda')">Agenda</a>
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('price')">Pricing</a>
+        <a class="nav-link-2 w-nav-link" (click)="gotoAwards()">Power Awards</a>
+      </div>
+      <div class="nav-cta-button-container">
+        <a class="nav-link-2 cta-button w-nav-link" (click)="register()">Register</a>
+      </div>
+    </nav>
+
+    <div class="menu-button w-nav-button" (click)="toggleMenu()">
+      <img src="https://uploads-ssl.webflow.com/663f16f5cbca3090adfc1da9/663f16f5cbca3090adfc1e39_Menu%20Icon.svg"
+        class="menu-icon" alt="logo">
+    </div>
+  </div>
+</header>
+<!-- <div class="navbar-no-shadow-container">
+    <div class="main-container">
+        <div class="static-bg-color">
+            <div class="padding-global">
+                <div class="container">
+                    <div class="layout">
+                        <div class="cf-1140px-wrapper-2">
+                            <img src="assets/images/windmill.png" class="menu-icon" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="image-container">
+  <img src="assets/images/windmill.png" alt="Centered Image" class="centered-image">
+</div>
+<div class="text-container">
+  <h1 class="heading-2">A Thought-Provoking Dive into India’s Energy Transition. Join thought leaders as we decode
+    Geopolitics, Regulatory challenges, Market trends, and the road to sustainable Net Zero.</h1>
+
+  <p class="text-block-2">
+    IPPAI’s 25th Regulator’s and Policymaker’s Retreat (RPR) is another milestone in the National effort to achieve
+    India’s goal of a Net-Zero economy, which will inform development in the years to come. As erratic weather
+    patterns and climate disasters accelerate, the urgency of decarbonising fossil fuel-driven systems becomes ever
+    more pronounced. Coupled with the resurgence of conflicts in West Asia, Africa, and Eastern Europe, as well as
+    tensions between developed economies that want to scale up fossil fuel production and developing countries
+    undertaking efforts to decarbonise, the kind of global cooperation needed to combat climate change effectively
+    will be extremely difficult to produc.The effects of such developments are seen in conversations at the highest
+    level of intergovernmental collaboration. For instance, representatives of Small Island States and Least
+    Developed Countries walked out of the recent COP 29 as the developed world refused to commit to the minimum
+    target of 1.3 trillion USD annually devoted to climate finance. This contrasts with NATO’s annual budget of 1.4
+    trillion USD. The global South struggles to find the funds to achieve Net-Zero while the Developed countries
+    struggle to find the political wherewithal to release such funds and transfer technology. With the additional
+    context of colonial histories, it is unfair that the reluctance of the largest polluters to share technology and
+    fund the energy transition jeopardises vulnerable nations worldwide.
+  </p>
+  <p class="text-block-2">
+    Thus, it falls to middle-of-the-pack countries to lead the way. India has already demonstrated its interest in
+    doing so by pursuing Renewable solutions to energy needs far more aggressively than many of its peers. However,
+    to enable the world's largest energy transition, the supply chain gap in the availability of critical minerals
+    and components required by RE technology must be addressed. Making significant strides toward this ambitious
+    goal would showcase effective public policy and leadership, compelling developed economies to follow suit. Such
+    challenges cannot be resolved by purely technical considerations of the power sector; it does not exist in a
+    vacuum. Thus, while the RPR is focused on power sector issues, it must also consider the overarching influences
+    of geopolitical and environmental factors on these questions.
+  </p>
+  <button class="btn-grad" (click)="register()">Register</button>
+</div>
+<section id="about">
+  <div class="energy-section-body">
+    <div class="energy-section">
+      <div class="energy-header">IPPAI ON A MISSION</div>
+      <h3 class="cf-h3-heading-40px white">Transforming India’s Energy Landscape</h3>
+      <div class="energy-content">
+        <div class="energy-text">
+          <p>India is at a pivotal juncture in its energy journey. As the nation embraces renewable energy,
+            digitalization, and innovative technologies, the challenges of ensuring energy security, addressing
+            policy gaps, and achieving Net Zero ambitions are more pressing than ever.</p>
+          <p>This conference, organized by the <strong>Independent Power Producers Association of India
+              (IPPAI)</strong>, brings together industry leaders, policymakers, and visionaries to explore the
+            path forward for a sustainable energy future.</p>
+        </div>
+        <div class="energy-images">
+          <div class="image-row">
+            <img src="image1.jpg" alt="Conference Image 1">
+            <img src="image2.jpg" alt="Conference Image 2">
+          </div>
+          <img src="image3.jpg" alt="Conference Image 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="speakers">
+  <div class="contributors-container">
+    <h1>
+      Notable Contributors
+    </h1>
+    <p>Meet the experts and leaders driving the conversation.</p>
+    <div class="uui-team03_component">
+      <div class="w-layout-grid uui-team03_list">
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Ghanshyam Prasad
+          </div>
+          <div class="uui-text-size-medium">
+            Chairperson,CEA
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Dr. Pramod Deo
+          </div>
+          <div class="uui-text-size-medium">
+            Former Chairman,CERC
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Ashok Kumar Rajput
+          </div>
+          <div class="uui-text-size-medium">
+            Member (Power System),CEA
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Abhijit Iyer Mitra
+          </div>
+          <div class="uui-text-size-medium">
+            Senior fellow, Institute of Peace and Conflict Studies
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="assets/images/R-N-Prasher.png" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. R N Prasher
+          </div>
+          <div class="uui-text-size-medium">
+            Former Chairman,HERC
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Rakesh Nath
+          </div>
+          <div class="uui-text-size-medium">
+            Former Member, Appellate Tribunal for Electricity
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Ms. Sudha Mahalingam
+          </div>
+          <div class="uui-text-size-medium">
+            Former Regulator, PNGRB
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Chintan Shah
+          </div>
+          <div class="uui-text-size-medium">
+            Group President, ReNew
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="assets/images/43d5630f55154002771ee4d3d529bfc9.png" alt="Conference Image 1"
+              class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. VP Raja
+          </div>
+          <div class="uui-text-size-medium">
+            Former Chairman, MERC
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Ms. Meera Shankar
+          </div>
+          <div class="uui-text-size-medium">
+            Former Ambassador to the USA
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Dr Rahul Walawalkar
+          </div>
+          <div class="uui-text-size-medium">
+            Founder and Chairperson, IESA
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Ajay Shankar
+          </div>
+          <div class="uui-text-size-medium">
+            Former Secretary, Ministry of Commerce and Industry
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. V. Subramanian
+          </div>
+          <div class="uui-text-size-medium">
+            Former Secretary, Ministry of New and Renewable Energy
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Balawant Joshi,
+          </div>
+          <div class="uui-text-size-medium">
+            Founder & MD,Idam Infra Advisory Pvt Ltd.
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Dr. V K Garg
+          </div>
+          <div class="uui-text-size-medium">
+            Former Chairman, Joint Electricity Regulatory Commission
+          </div>
+        </div>
+        <div class="uui-team03_item">
+          <div class="uui-team03_image-wrapper">
+            <img src="image1.jpg" alt="Conference Image 1" class="uui-team03_image">
+          </div>
+          <div class="uui-heading-tiny">
+            Mr. Harry Dhaul
+          </div>
+          <div class="uui-text-size-medium">
+            Director General,IPPAI
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uui-section_faq03" id="agenda">
+  <div class="uui-page-padding-4">
+    <div class="uui-container-large-4">
+      <div class="uui-padding-vertical-xhuge-6">
+        <div class="uui-max-width-large-3">
+          <h2 class="uui-heading-medium-5">Agenda</h2>
+          <div class="uui-space-xsmall-3">Day 1</div>
+          <div class="uui-text-size-large-5"><strong>Geopolitical quakes and Economic waves</strong></div>
+        </div>
+        <div class="uui-faq03_component">
+          <div class="uui-faq03_list">
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>The trajectory of escalating tensions between Iran and
+                    Israel</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">
+                <a href="#">RPR-101</a>
+              </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Ukrainian (Western) and Russian Supply Chains</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-102 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>The Chinese zero-sum game</strong> </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-103 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>The Trump presidency</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-104 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Nuances of Foreign Political Interference</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4"> RPR-105 </div>
+            </div>
+            <div id="w-node-_90438cbd-f5a6-b382-9fbc-e6a1aaf37580-6fb9f1c8" class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Lawfare in Warfare</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-106 </div>
+            </div>
+            <div id="w-node-_150a3083-a2db-7093-dafa-0cda8f47dc50-6fb9f1c8" class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"> <strong>Social media & The New Left</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-107</div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="uui-max-width-large-3">
+          <div class="uui-space-xsmall-3">Day 2</div>
+          <div class="uui-text-size-large-5"><strong>The Energy-Water-Food Nexus: Powering Sustainable Agriculture and
+              Water Management in the Era of Climate Catastrophe</strong></div>
+        </div>
+        <div class="uui-faq03_component">
+          <div class="uui-faq03_list">
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Right to Water</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">
+                <a href="#">RPR-201</a>
+              </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Water(shed) Management</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-202 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Water Wars</strong></div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-203 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Water-Food-Energy Nexus, Wrong crop cultivation, Impact on soil
+                    health and water table</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-204 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Water Energy Security</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4"> RPR-205 </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="uui-max-width-large-3">
+          <div class="uui-space-xsmall-3">Day 3</div>
+          <div class="uui-text-size-large-5"><strong>The Transitioning Power Sector: Overcoming Policy Barriers &
+              Addressing the Legal, Regulatory and Market Challenges</strong></div>
+        </div>
+        <div class="uui-faq03_component">
+          <div class="uui-faq03_list">
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Inaugurating Session</strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">
+                <a href="#">RPR-301</a>
+              </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Resource Adequacy Planning: Mandates and
+                    Compliances<br>&zwj;<br>Cybersecurity and Resilience in Adequacy Planning &nbsp;<br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-302 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Transmission Planning</strong></div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-303 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>DISCOM’s Challenges and Portfolio Management of DISCOMs.
+                    <br>&zwj;<br>How to make DISCOMs Profitable?<br><br>Supply of Quality Power <br><br>Consumer
+                    Interface <br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-304 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Open Access Consumer (C&amp;I) <br><br>Policy
+                    In-transitions<br><br>Green Energy Open Access <br> <br><br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4"> RPR-305 </div>
+            </div>
+            <div id="w-node-_90438cbd-f5a6-b382-9fbc-e6a1aaf37580-6fb9f1c8" class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Power Market Development<br><br>Cross Border Energy Trading
+                    <br><br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-306 </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="uui-max-width-large-3">
+          <div class="uui-space-xsmall-3">Day 4</div>
+          <div class="uui-text-size-large-5"><strong>Regulating the Market Shift to Decarbonisation
+            </strong></div>
+        </div>
+        <div class="uui-faq03_component">
+          <div class="uui-faq03_list">
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Energy Storage System
+                  </strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">
+                <a href="#">RPR-401</a>
+              </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Grid Stability in the Age of Renewables
+                    <br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-402 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Scope of Small Modular Reactors (SMRs)</strong></div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-403 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading">
+                  <strong>Political and Legislative Underpinnings of Right to Clean Energy<br><br>Electricity as a
+                    fundamental right: Article 21 <br><br>Electricity as a Political Conundrum <br> </strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-404 </div>
+            </div>
+            <div class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading">
+                  <strong>The Way Forward Panel Discussion <br>&zwj;<br>Framework for Achieving Net Zero
+                    <br><br>Reconciling competing claims for Land Use Rights– Agriculture, Industry, Forests,
+                    Urbanisation, Village ‘Commons’ <br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4"> RPR-405 </div>
+            </div>
+            <div id="w-node-_90438cbd-f5a6-b382-9fbc-e6a1aaf37580-6fb9f1c8" class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Maintaining Industrial Growth and improving standard of living
+                    amidst Net Zero Aspiration <br><br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4">RPR-406 </div>
+            </div>
+            <div id="w-node-_90438cbd-f5a6-b382-9fbc-e6a1aaf37580-6fb9f1c8" class="uui-faq03_content">
+              <div class="uui-faq03_question">
+                <div class="uui-faq03_heading"><strong>Power Awards <br><br></strong>
+                </div>
+              </div>
+              <div class="uui-text-size-medium-4"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="price">
+  <div class="card-container">
+    <h2 class="cf-h2-heading">Delegate Fees</h2>
+    <div class="cards">
+      <!-- Private Entities -->
+      <div class="card">
+        <h3 class="cf-pricing-plan">Private Entities</h3>
+        <h2 class="cf-price">Rs. <span class="amount">75000</span>/-</h2>
+        <div class="cf-price-points-contain">
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Fee Includes Accomodation, Food and access to the Event</div>
+          </div>
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Complimentary Pick-Up from Belgaum Airport</div>
+          </div>
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Free Spouse Stay and Spouse Program</div>
+          </div>
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Taxes additional as applicable</div>
+          </div>
+        </div>
+        <button class="cf-btn-grad" (click)="register()">Register</button>
+      </div>
+  
+      <!-- Government Entities -->
+      <div class="card">
+        <h3 class="cf-pricing-plan">Government Entities</h3>
+        <h2 class="cf-price">Rs. <span class="amount">49000</span>/-</h2>
+        <div class="cf-price-points-contain">
+          <div class="cf-price-point-wrapper">
+            <img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Fee Includes Accomodation, Food and access to the Event</div>
+          </div>
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Complimentary Pick-Up from Belgaum Airport</div>
+          </div>
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Free Spouse Stay and Spouse Program</div>
+          </div>
+          <div class="cf-price-point-wrapper"><img src="assets/images/check.png" loading="lazy" alt="" class="cf-checkmark">
+            <div class="cf-price-text">Taxes additional as applicable</div>
+          </div>
+        </div>
+        <button class="cf-btn-grad" (click)="register()">Register</button>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="spons-container">
+  <div class="sponsor-header">
+    <h2 class="header-title">SPONSORSHIP OPPORTUNITIES</h2>
+    <p class="header-description">
+      We are proud to collaborate with esteemed sponsors who share our vision
+      for a sustainable energy future. Their support is instrumental in making
+      this conference a platform for impactful discussions and innovative solutions.
+    </p>
+  </div>
+
+  <div class="grid-container">
+    <div *ngFor="let sponsor of sponsorships" class="sponsor-card" [ngClass]="{'dark-card': sponsor.theme === 'dark'}">
+      <h3 class="sponsor-name">{{ sponsor.name }}</h3>
+      <h2 class="sponsor-price"><span class="highlight">{{ sponsor.price }}</span></h2>
+      <hr>
+      <em class="sponsor-description">{{ sponsor.description }}</em>
+      <button class="contact-btn" (click)="contact()">Contact Us</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="page-wrapper">
+    <section class="uui-section_contact10">
+      <div id="contact" class="uui-page-padding-2">
+        <div class="uui-container-large">
+          <div class="uui-padding-vertical-xhuge-4">
+            <div class="uui-text-align-center">
+              <div class="uui-max-width-large align-center">
+                <div class="uui-heading-subheading-2">Contact us</div>
+                <h2 class="uui-heading-medium-3">Get in touch</h2>
+                <div class="uui-space-xsmall"></div>
+                <div class="uui-text-size-large-3">Our team is always here to chat.</div>
+              </div>
+            </div>
+            <div class="w-layout-grid uui-contact10_component">
+              <div class="uui-contact10_item">
+                <div class="cf-features-section-2-icon-wrap">
+                  <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2 7L10.1649 12.7154C10.8261 13.1783 11.1567 13.4097 11.5163 13.4993C11.8339 13.5785 12.1661 13.5785 12.4837 13.4993C12.8433 13.4097 13.1739 13.1783 13.8351 12.7154L22 7M6.8 20H17.2C18.8802 20 19.7202 20 20.362 19.673C20.9265 19.3854 21.3854 18.9265 21.673 18.362C22 17.7202 22 16.8802 22 15.2V8.8C22 7.11984 22 6.27976 21.673 5.63803C21.3854 5.07354 20.9265 4.6146 20.362 4.32698C19.7202 4 18.8802 4 17.2 4H6.8C5.11984 4 4.27976 4 3.63803 4.32698C3.07354 4.6146 2.6146 5.07354 2.32698 5.63803C2 6.27976 2 7.11984 2 8.8V15.2C2 16.8802 2 17.7202 2.32698 18.362C2.6146 18.9265 3.07354 19.3854 3.63803 19.673C4.27976 20 5.11984 20 6.8 20Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                </div>
+                <div class="uui-space-small-2"></div>
+                <h3 class="uui-heading-xxsmall-2">Email</h3>
+                <div class="uui-space-xxsmall"></div>
+                <div class="uui-text-size-medium-3">Email us on the below Id&#x27;s</div>
+                <div class="uui-space-small-2"></div>
+                <a href="#" class="uui-text-style-link-02">dharun@ippaimail.org<br>gulrez@ippaimail.org</a>
+              </div>
+              <div class="uui-contact10_item">
+                <div class="cf-features-section-2-icon-wrap">
+                  <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.38028 8.85323C9.07627 10.3028 10.0251 11.6615 11.2266 12.8631C12.4282 14.0646 13.7869 15.0134 15.2365 15.7094C15.3612 15.7693 15.4235 15.7992 15.5024 15.8222C15.7828 15.904 16.127 15.8453 16.3644 15.6752C16.4313 15.6274 16.4884 15.5702 16.6027 15.4559C16.9523 15.1063 17.1271 14.9315 17.3029 14.8172C17.9658 14.3862 18.8204 14.3862 19.4833 14.8172C19.6591 14.9315 19.8339 15.1063 20.1835 15.4559L20.3783 15.6508C20.9098 16.1822 21.1755 16.448 21.3198 16.7333C21.6069 17.3009 21.6069 17.9712 21.3198 18.5387C21.1755 18.8241 20.9098 19.0898 20.3783 19.6213L20.2207 19.7789C19.6911 20.3085 19.4263 20.5733 19.0662 20.7756C18.6667 21 18.0462 21.1614 17.588 21.16C17.1751 21.1588 16.8928 21.0787 16.3284 20.9185C13.295 20.0575 10.4326 18.433 8.04466 16.045C5.65668 13.6571 4.03221 10.7947 3.17124 7.76131C3.01103 7.19687 2.93092 6.91464 2.9297 6.5017C2.92833 6.04347 3.08969 5.42298 3.31411 5.02348C3.51636 4.66345 3.78117 4.39863 4.3108 3.86901L4.46843 3.71138C4.99987 3.17993 5.2656 2.91421 5.55098 2.76987C6.11854 2.4828 6.7888 2.4828 7.35636 2.76987C7.64174 2.91421 7.90747 3.17993 8.43891 3.71138L8.63378 3.90625C8.98338 4.25585 9.15819 4.43065 9.27247 4.60643C9.70347 5.26932 9.70347 6.1239 9.27247 6.78679C9.15819 6.96257 8.98338 7.13738 8.63378 7.48698C8.51947 7.60129 8.46231 7.65845 8.41447 7.72526C8.24446 7.96269 8.18576 8.30695 8.26748 8.5873C8.29048 8.6662 8.32041 8.72854 8.38028 8.85323Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                </div>
+                <div class="uui-space-small-2"></div>
+                <h3 class="uui-heading-xxsmall-2">Phone</h3>
+                <div class="uui-space-xxsmall"></div>
+                <div class="uui-text-size-medium-3">Call us for more info</div>
+                <div class="uui-space-small-2"></div>
+                <a href="#" class="uui-text-style-link-02">+91 97170 63202 <br>+91 973969 4242</a>
+              </div>
+              <div class="uui-contact10_item">
+                <div class="cf-features-section-2-icon-wrap">
+                  <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M12 22C14 18 20 15.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 15.4183 10 18 12 22Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                </div>
+                <div class="uui-space-small-2"></div>
+                <h3 class="uui-heading-xxsmall-2">Office</h3>
+                <div class="uui-space-xxsmall"></div>
+                <div class="uui-text-size-medium-3">Visit us at our office HQ.</div>
+                <div class="uui-space-small-2"></div>
+                <a href="#" class="uui-text-style-link-02">Diamond House, 2nd Floor, 11, Primrose Road, Bengaluru -
+                  560025</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<router-outlet></router-outlet>

@@ -1,0 +1,96 @@
+<app-header></app-header>
+<section>
+    <div class="form-container">
+        <h2>25th Regulators & Policymakers Retreat- IPPAI</h2>
+      
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <!-- Name -->
+          <label>Name:</label>
+          <input type="text" formControlName="name">
+          <div class="error" *ngIf="submitted && registerForm.controls['name'].invalid">
+            Name is required
+          </div>
+      
+          <!-- Organisation -->
+          <label>Organisation:</label>
+          <input type="text" formControlName="organisation">
+          <div class="error" *ngIf="submitted && registerForm.controls['organisation'].invalid">
+            Organisation is required
+          </div>
+      
+          <!-- Designation -->
+          <label>Designation:</label>
+          <input type="text" formControlName="designation">
+          <div class="error" *ngIf="submitted && registerForm.controls['designation'].invalid">
+            Designation is required
+          </div>
+      
+          <!-- Contact Number -->
+          <label>Contact Number:</label>
+          <input type="tel" formControlName="contact">
+          <div class="error" *ngIf="submitted && registerForm.controls['contact'].invalid">
+            Enter a valid 10-digit Contact Number
+          </div>
+      
+          <!-- Email Address -->
+          <label>Email Address:</label>
+          <input type="email" formControlName="email">
+          <div class="error" *ngIf="submitted && registerForm.controls['email'].invalid">
+            Enter a valid Email Address
+          </div>
+      
+          <!-- Preferred Pick-Up Location -->
+          <div>
+            <label><strong>Preferred Pick-Up Location:</strong></label>
+            <div class="radio-group">
+                <label class="radio-option">
+                    <input type="radio" name="pickup" value="Belgaum Airport" required>
+                    Belgaum Airport
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="pickup" value="Belgaum Train Station">
+                    Belgaum Train Station
+                </label>
+            </div>
+        </div>
+                        
+          <div class="error" *ngIf="submitted && registerForm.controls['pickup'].invalid">
+            Pick-up location is required
+          </div>
+
+                    <!-- Preferred Room Floor -->
+
+          <div>
+            <label><strong>Preferred Room Floor:</strong></label>
+            <div class="radio-group">
+                <label class="radio-option">
+                    <input type="radio" name="room" value="Ground Floor" required>
+                    Ground Floor
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="room" value="First Floor">
+                    First Floor
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="room" value="Second Floor">
+                    Second Floor
+                </label>
+            </div>
+        </div>
+      
+          <div class="error" *ngIf="submitted && registerForm.controls['room'].invalid">
+            Room floor selection is required
+          </div>
+      
+          <!-- Any Other Requirements -->
+          <label>Any Other Requirements:</label>
+          <textarea formControlName="requirements"></textarea>
+      
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+</section>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

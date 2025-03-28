@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Public Notices & Draft Notifications</h2>
+  <ul class="document-list">
+    <li *ngFor="let doc of documents">
+      <h3>{{ doc.title }}</h3> <!-- Display the document title -->
+
+      <ul *ngIf="doc.links.length > 0">
+        <li *ngFor="let link of doc.links">
+          <a (click)="openLink(link.url)" href="javascript:void(0)">{{ link.label }}</a>
+          <!-- Use href="javascript:void(0)" to prevent default navigation -->
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

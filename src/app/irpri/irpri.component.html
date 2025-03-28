@@ -1,0 +1,357 @@
+<header class="nav-bar-2 w-nav">
+  <div class="nav-container">
+    <div class="logo-div">
+      <a routerLink="/home" class="nav-logo w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/663f16f5cbca3090adfc1da9/663f1ab1d85cd43ed115be13_logo.png"
+          width="120" alt="IPPAI Logo" class="logo-2 ippai">
+      </a>
+    </div>
+
+    <nav class="nav-content-2 w-nav-menu">
+      <div class="nav-menu">
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('about')">About</a>
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('curriculum')">Curriculum</a>
+        <a class="nav-link-2 w-nav-link" (click)="scrollTo('contact')">Contact</a>        
+      </div>
+      <div class="nav-cta-button-container">
+        <a class="nav-link-2 cta-button w-nav-link" (click)="register()">Register</a>
+      </div>
+    </nav>
+
+    <div class="menu-button w-nav-button" (click)="toggleMenu()">
+      <img src="https://uploads-ssl.webflow.com/663f16f5cbca3090adfc1da9/663f16f5cbca3090adfc1e39_Menu%20Icon.svg"
+        class="menu-icon" alt="logo">
+    </div>
+  </div>
+</header>
+
+
+<section class="course-banner">
+  <div class="text-content">
+    <h1>Intensive Course on <br> Regulatory & Policy Framework in the Power Sector</h1>
+    <p>
+      3-day Residential course jointly conducted by IPPAI and Idam Infrastructure Advisory
+    </p>
+    <strong>20th to 22nd March 2025</strong>
+    <div class="btn-container">
+      <button class="register-btn" (click)="register()">Register</button>
+    </div>
+  </div>
+  <div class="image-content">
+    <img src="assets/images/power-sector.png" alt="Power Sector Illustration">
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <h2>About IRPRI</h2>
+  <div class="content">
+    <div class="left-column">
+      <p>
+        The IPPAI Regulatory and Policy Research Institute has been established to share knowledge
+        and experience about the workings of the Indian energy and infrastructure sector among
+        policymakers, regulators, and other stakeholders in the power sector as it undergoes
+        constant evolution.
+      </p>
+      <p>
+        The Indian Power Sector is critical for the economic growth, self-reliance, sustainability,
+        and security of the country. Post the reforms ushered through the Electricity Act, 2003,
+        the sector has been rapidly evolving and this has accelerated the development of a plethora
+        of regulations and policy directives in order to give a direction to this complex sector...
+      </p>
+      <p>In this regard, the concepts of Regulation and Trading of Power in the Indian Power Sector are quiteunique and
+        thus require a more detailed and in depth analysis, along with a dedicated effort totrain/skill the present
+        stakeholders and future leaders, for the benefit of the sector and the country as awhole.</p>
+      <p>In the case of Regulation, some of the key goals of the regulatory process in India include directingsector
+        players to achieve a mandated level of performance on various parameters such as quality,continuity and
+        reliability of service, or providing a fair deal to consumers and addressing abuse ofmarket forces. This
+        involves a high level of complexity in decision making and IPPAI believes that aspecialized and trained
+        Regulatory Cadre for the Indian Power Sector is the need of the hour in addi-tion to training the existing
+        stakeholders.</p>
+    </div>
+
+    <div class="right-column">
+      <p>
+        In the case of Power Market development and Power Trading in particular, India has been far
+        ahead of the rest of the world and has a fully functioning market. However, this market is
+        a unique one, which is based on a combination of both the principles of a competitive market
+        and a regulated market...
+      </p>
+      <p>
+        Keeping this in mind, IRPRI has been set up as a separate division within the overall
+        framework of IPPAI but with a much wider, and far-reaching role to catalyze development
+        of the power markets with a focus on capacity building in regulatory, policy, and power
+        trading areas. <br> This is proposed to be done through knowledge enhancement by collaborating with
+        academicians,industry, experts and economists at the national and international level and through
+        knowledgedissemination to the power and energy sector by managing various training programs, workshops
+        andseminars.
+      </p>
+      <p>The focus would be on interactive learning using case studies, faculty and participant experiencerather than a
+        purely theoretical approach. We believe that this would help the participants gain wellinformed and practical
+        insights into regulatory, policy and power trading concepts of the power sectorin India.</p>
+
+    </div>
+  </div>
+</section>
+<hr>
+
+<section class="curriculum-section" id="curriculum">
+  <div class="uui-page-padding-2">
+    <div class="uui-container-large-2">
+      <div class="uui-padding-vertical-xhuge-2">
+        <div class="uui-text-align-center-2">
+          <div class="uui-max-width-large-2 align-center">
+
+            <div class="uui-heading-subheading-2">Course</div>
+            <h2 class="uui-heading-medium-2">IRPRI Curriculum</h2>
+          </div>
+        </div>
+        <div class="uui-faq01_component">
+          <div class="uui-faq01_list">
+
+            <div *ngFor="let course of courses" class="accordion-item">
+              <button class="accordion-header" (click)="toggleExpand(course)">
+                <span class="accordion-title">{{ course.id }} - {{ course.title }}</span>
+                <span class="accordion-icon">{{ course.expanded ? '−' : '+' }}</span>
+              </button>
+
+              <div *ngIf="course.expanded" class="accordion-content">
+                <div [innerHTML]="course.content"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faculty-section">
+  <div class="faculty-container">
+    <div class="faculty-left">
+      <h2>Past Faculty Members:</h2>
+      <img src="your-image.jpg" alt="Faculty Lecture" />
+    </div>
+    <div class="faculty-right">
+      <ul>
+        <li><a href="#">Dr. Pramod Deo</a>, <br>Former Chairman, Central Electricity Regulatory Commission</li>
+        <li><a href="#">Mr. Rakesh Nath</a>, <br>Former Member, Appellate Tribunal for Electricity</li>
+        <li><a href="#">Mr. Ismail Ali Khan</a>, <br>Chairman, Telangana State Electricity Regulatory Commission</li>
+        <li><a href="#">Mr. VP Raja</a>, <br>Former Chairman, Maharashtra Electricity Regulatory Commission</li>
+        <li><a href="#">Mr. UN Panjiar</a>, <br>Former Chairman, Bihar Electricity Regulatory Commission</li>
+        <li><a href="#">Mr. VK Agrawal</a>, <br>Former Executive Director, POSOCO</li>
+        <li><a href="#">Mr. Balawant Joshi</a>, <br>Managing Director, Idam Infrastructure Advisory</li>
+        <li><a href="#">Mr. Sanjay Sen</a>, <br>Senior Advocate, Supreme Court</li>
+        <li><a href="#">Mr. Suhas Tuljapurkar,</a>, <br>Director, Legasis Services</li>
+        <li><a href="#">Mr. Dilip Joshi,</a>, <br>Former Superintending Engineer, Gujarat SLDC, GETCO</li>
+        <li><a href="#">Dr. GC Datta Roy,</a>, <br>Advisor, DESL</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="course-fee-section">
+  <div class="course-fee-container">
+    <div class="course-fee-left">
+      <img src="https://irpri.ippai.org/images/10-education-university-course-fee-admission-money-price-512.webp"
+        alt="Course Fee Image" class="pricing-image-two" />
+    </div>
+    <div class="course-fee-right">
+      <p class="small-text">Per Person</p>
+      <div class="fee-header">
+        <h2>Course Fee</h2>
+        <h3 class="price">Rs. 75,000/-</h3>
+      </div>
+      <hr />
+      <div class="course-details">
+        <p class="left">3 day Residential Course</p>
+        <p class="middle">Including accommodation and food</p>
+        <p class="right">Taxes Extra</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gallery-overview">
+  <div class="container-4">
+    <div class="gallery-wrapper">
+      <div class="gallery-block">
+        <h3>IRPRI Batch 1</h3>
+        <p>Successful Completion of IRPRI Batch 1 from 13th to 15th June</p>
+      </div>
+      <div class="gallery-grid">
+
+      </div>
+    </div>
+  </div>
+</section>
+<div class="page-wrapper">   
+  <section class="uui-section_team02">
+    <div class="uui-page-padding-2">
+      <div class="uui-container-large">
+        <div class="uui-padding-vertical-xhuge-3">
+          <div class="uui-text-align-center">
+            <div class="uui-max-width-large align-center">
+              <h2 class="uui-heading-medium-2">Meet our Advisory Board</h2>
+              <div class="uui-space-xsmall"></div>
+              <div class="uui-text-size-large-2">
+                Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do your best work.
+              </div>
+            </div>
+          </div>
+          <div class="uui-team02_component">
+            <div class="uui-team02_list-wrapper">
+              <div class="w-layout-grid uui-team02_list">
+                <div *ngFor="let advisor of advisors" class="uui-team02_item" (click)="openPopup(advisor)">
+                  <div class="uui-team02_image-wrapper">
+                    <img [src]="advisor.image" loading="lazy" alt="{{ advisor.name }}" class="uui-team02_image">
+                  </div>
+                  <div class="uui-heading-tiny">{{ advisor.name }}</div>
+                  <div class="uui-text-size-medium-2">{{ advisor.title }}</div>
+                  <div class="uui-space-xsmall"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="popup-overlay" *ngIf="selectedAdvisor">
+    <div class="popup-content">
+      <span class="close-btn" (click)="closePopup()">×</span>
+      <h3>{{ selectedAdvisor.name }}</h3>
+      <p><strong>{{ selectedAdvisor.title }}</strong></p>
+      <!-- <img [src]="selectedAdvisor.image" alt="" class="popup-image"> -->
+      <p [innerHTML]="selectedAdvisor.description"></p>
+    </div>
+  </div>
+  </div>
+
+<div class="testimonials-section">
+  <h2>Don’t just take our word for it</h2>
+  <p>Hear from some of our amazing customers.</p>
+
+  <div class="testimonials-container">
+    <div class="testimonial-card" *ngFor="let review of testimonials">
+      <div class="stars">★★★★★</div>
+      <p>{{ review.feedback }}</p>
+      <strong>{{ review.participant }}</strong>
+    </div>
+  </div>
+</div>
+
+<section class="about-campus-section">
+  <div class="about-campus-content">
+    <h2>About the Campus:</h2>
+    <p>
+      The IRPRI facility is at Shoonya Farm Retreat, Belagundi, Belgaum, Karnataka,
+      which is a 3-hour drive from the Goa airport and a 30-minute drive from the Belgaum airport.
+    </p>
+    <p>
+      Shoonya stands for openness, malleability, and infinite possibilities.
+      Here, we do not see our visitors as guests, but as a part of the ever-evolving Shoonya story.
+      This story builds through interaction, celebration, team building, wellness, and the many other experiences we
+      offer.
+    </p>
+    <p>
+      Sociality lies at the heart of Shoonya. This is a property meant to be enjoyed by groups,
+      large families, colleagues, or a robust set of friends. This is also a perfect place
+      for solitude and self-introspection. A healthy forty acres that multiplies with exploration,
+      and expands with imagination.
+    </p>
+    <a href="https://www.shoonyaretreat.com/" class="about-campus-button">VISIT WEBSITE</a>
+  </div>
+
+  <div class="about-campus-image">
+    <img src="https://your-image-url.com/campus-image.jpg" alt="Campus Image">
+  </div>
+</section>
+
+<section class="uui-section_contact10" id="contact">
+  <div id="contact" class="uui-page-padding-2">
+    <div class="uui-container-large">
+      <div class="uui-padding-vertical-xhuge-4">
+        <div class="uui-text-align-center">
+          <div class="uui-max-width-large align-center">
+            <div class="uui-heading-subheading-2">Contact us</div>
+            <h2 class="uui-heading-medium-3">Get in touch</h2>
+            <div class="uui-space-xsmall"></div>
+            <div class="uui-text-size-large-3">Our team is always here to chat.</div>
+          </div>
+        </div>
+        <div class="w-layout-grid uui-contact10_component">
+          <div class="uui-contact10_item">
+            <div class="cf-features-section-2-icon-wrap">
+              <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 7L10.1649 12.7154C10.8261 13.1783 11.1567 13.4097 11.5163 13.4993C11.8339 13.5785 12.1661 13.5785 12.4837 13.4993C12.8433 13.4097 13.1739 13.1783 13.8351 12.7154L22 7M6.8 20H17.2C18.8802 20 19.7202 20 20.362 19.673C20.9265 19.3854 21.3854 18.9265 21.673 18.362C22 17.7202 22 16.8802 22 15.2V8.8C22 7.11984 22 6.27976 21.673 5.63803C21.3854 5.07354 20.9265 4.6146 20.362 4.32698C19.7202 4 18.8802 4 17.2 4H6.8C5.11984 4 4.27976 4 3.63803 4.32698C3.07354 4.6146 2.6146 5.07354 2.32698 5.63803C2 6.27976 2 7.11984 2 8.8V15.2C2 16.8802 2 17.7202 2.32698 18.362C2.6146 18.9265 3.07354 19.3854 3.63803 19.673C4.27976 20 5.11984 20 6.8 20Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+            </div>
+            <div class="uui-space-small-2"></div>
+            <h3 class="uui-heading-xxsmall-2">Email</h3>
+            <div class="uui-space-xxsmall"></div>
+            <div class="uui-text-size-medium-3">Email us on the below Id&#x27;s</div>
+            <div class="uui-space-small-2"></div>
+            <a href="#" class="uui-text-style-link-02">dharun@ippaimail.org<br>gulrez@ippaimail.org</a>
+          </div>
+          <div class="uui-contact10_item">
+            <div class="cf-features-section-2-icon-wrap">
+              <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.38028 8.85323C9.07627 10.3028 10.0251 11.6615 11.2266 12.8631C12.4282 14.0646 13.7869 15.0134 15.2365 15.7094C15.3612 15.7693 15.4235 15.7992 15.5024 15.8222C15.7828 15.904 16.127 15.8453 16.3644 15.6752C16.4313 15.6274 16.4884 15.5702 16.6027 15.4559C16.9523 15.1063 17.1271 14.9315 17.3029 14.8172C17.9658 14.3862 18.8204 14.3862 19.4833 14.8172C19.6591 14.9315 19.8339 15.1063 20.1835 15.4559L20.3783 15.6508C20.9098 16.1822 21.1755 16.448 21.3198 16.7333C21.6069 17.3009 21.6069 17.9712 21.3198 18.5387C21.1755 18.8241 20.9098 19.0898 20.3783 19.6213L20.2207 19.7789C19.6911 20.3085 19.4263 20.5733 19.0662 20.7756C18.6667 21 18.0462 21.1614 17.588 21.16C17.1751 21.1588 16.8928 21.0787 16.3284 20.9185C13.295 20.0575 10.4326 18.433 8.04466 16.045C5.65668 13.6571 4.03221 10.7947 3.17124 7.76131C3.01103 7.19687 2.93092 6.91464 2.9297 6.5017C2.92833 6.04347 3.08969 5.42298 3.31411 5.02348C3.51636 4.66345 3.78117 4.39863 4.3108 3.86901L4.46843 3.71138C4.99987 3.17993 5.2656 2.91421 5.55098 2.76987C6.11854 2.4828 6.7888 2.4828 7.35636 2.76987C7.64174 2.91421 7.90747 3.17993 8.43891 3.71138L8.63378 3.90625C8.98338 4.25585 9.15819 4.43065 9.27247 4.60643C9.70347 5.26932 9.70347 6.1239 9.27247 6.78679C9.15819 6.96257 8.98338 7.13738 8.63378 7.48698C8.51947 7.60129 8.46231 7.65845 8.41447 7.72526C8.24446 7.96269 8.18576 8.30695 8.26748 8.5873C8.29048 8.6662 8.32041 8.72854 8.38028 8.85323Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+            </div>
+            <div class="uui-space-small-2"></div>
+            <h3 class="uui-heading-xxsmall-2">Phone</h3>
+            <div class="uui-space-xxsmall"></div>
+            <div class="uui-text-size-medium-3">Call us for more info</div>
+            <div class="uui-space-small-2"></div>
+            <a href="#" class="uui-text-style-link-02">+91 97170 63202 <br>+91 973969 4242</a>
+          </div>
+          <div class="uui-contact10_item">
+            <div class="cf-features-section-2-icon-wrap">
+              <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path
+                    d="M12 22C14 18 20 15.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 15.4183 10 18 12 22Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+            </div>
+            <div class="uui-space-small-2"></div>
+            <h3 class="uui-heading-xxsmall-2">Office</h3>
+            <div class="uui-space-xxsmall"></div>
+            <div class="uui-text-size-medium-3">Visit us at our office HQ.</div>
+            <div class="uui-space-small-2"></div>
+            <a href="#" class="uui-text-style-link-02">Diamond House, 2nd Floor, 11, Primrose Road, Bengaluru -
+              560025</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    <a routerLink="/about">About</a>
+    <a routerLink="/curriculum">Curriculum</a>
+    <a routerLink="/contact">Contact</a>
+  </div>
+  <hr />
+  <div class="footer-bottom">
+    <p>© 2024 IPPAI. All rights reserved</p>
+    <div class="footer-links">
+      <a routerLink="/terms">Terms Of Use</a>
+      <a routerLink="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<div class="page-wrapper">   
+  <section class="uui-section_team02">
+    <div class="uui-page-padding-2">
+      <div class="uui-container-large">
+        <div class="uui-padding-vertical-xhuge-3">
+          <div class="uui-text-align-center">
+            <div class="uui-max-width-large align-center">
+              <h2 class="uui-heading-medium-2">Meet our Advisory Board</h2>
+              <div class="uui-space-xsmall"></div>
+              <div class="uui-text-size-large-2">
+                Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do your best work.
+              </div>
+            </div>
+          </div>
+          <div class="uui-team02_component">
+            <div class="uui-team02_list-wrapper">
+              <div class="w-layout-grid uui-team02_list">
+                <div *ngFor="let advisor of advisors" class="uui-team02_item" (click)="openPopup(advisor)">
+                  <div class="uui-team02_image-wrapper">
+                    <img [src]="advisor.image" loading="lazy" alt="{{ advisor.name }}" class="uui-team02_image">
+                  </div>
+                  <div class="uui-heading-tiny">{{ advisor.name }}</div>
+                  <div class="uui-text-size-medium-2">{{ advisor.title }}</div>
+                  <div class="uui-space-xsmall"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="popup-overlay" *ngIf="selectedAdvisor">
+    <div class="popup-content">
+      <span class="close-btn" (click)="closePopup()">×</span>
+      <h3>{{ selectedAdvisor.name }}</h3>
+      <p><strong>{{ selectedAdvisor.title }}</strong></p>
+      <!-- <img [src]="selectedAdvisor.image" alt="" class="popup-image"> -->
+      <p [innerHTML]="selectedAdvisor.description"></p>
+    </div>
+  </div>
+  </div>
+  
+<app-footer></app-footer>
+<router-outlet></router-outlet>

@@ -1,0 +1,1153 @@
+/* styles for testimonials*/
+.simply-scroll-container{ position: relative;}
+.simply-scroll-clip{position: relative;overflow: hidden;}
+.simply-scroll-list{overflow: hidden;margin: 0;padding: 0;list-style: none;}
+.simply-scroll-list li{border: 0; vertical-align: top;list-style-type:decimal;}
+.simply-scroll-list li img{border: none;}
+#testimonialbtn{border-radius: 0px; float: right; margin-right: 422px;}
+
+.vert-testimonials{  /* wider than clip to position buttons to side */ /*background-color: #fff;*/ width: 100%;padding: 5px;height:332px !important;margin-top: 10px;margin-bottom:5px;}
+.vert-testimonials .simply-scroll-clip{ width: 100%;height: 380px;}
+.vert-testimonials .simply-scroll-list{text-align: left;list-style-type: none;}
+.vert-testimonials .simply-scroll-list li{width: 100%;padding-right: 35px;border-bottom: 1px dotted #888;margin: 5px;color: #222;text-align:justify;font-weight:normal;margin-left:28px;list-style-type:decimal;}
+.vert-testimonials .simply-scroll-list li img{}
+.vert-testimonials .simply-scroll-list li a{color: #000;}
+.vert-testimonials .simply-scroll-btn-up{  /* modified btn pos */    right: 0;top: 0;}
+.vert-testimonials .simply-scroll-list li p{font-size:13px; text-align:left; text-align:justify;margin: 0px;}
+.vert-testimonials .simply-scroll-btn-up.disabled{}
+.vert-testimonials .simply-scroll-btn-up:hover{}
+.vert-testimonials .simply-scroll-btn-down{ /* modified btn pos */ right: 0;top: 52px;} 
+
+.bg_image{background-image: url(/web/20170715195550im_/http://www.ippai.org/img/background.jpg);background-size: 100% 100%;background-position: left top;}
+.imgPresentation{padding-right: 15px;float: left; padding-bottom: 65px;}
+
+.pagingColorbg{background-color: #d3363b;padding-left: 5px;padding-right: 5px;color: #fff;}
+.pagingColor tr{border-bottom-right-radius: 4px;border-top-right-radius: 4px;}
+.pagingColor td a {position: relative;float: left;padding: 6px 12px;line-height: 1.42857143;text-decoration: none;color: #d3363b;background-color: #fff;border: 1px solid #ddd;margin-left: -1px;}
+.pagingColor td a:hover {background-color: #B7AD70;color:#fff;}
+.pagingColor td span{position: relative;float: left;padding: 6px 12px;line-height: 1.42857143;text-decoration: none;color: #fff;background-color: #B7AD70;border: 1px solid #ddd;margin-left: -1px;}
+.pagingColor td{padding:0px;padding-top:5px;}
+.copyright{padding-top: 7px;}
+.copyright p{float: right;}
+
+/*= testimonials section ==================================================================================================================================================================*/
+
+.sc_testimonials {
+  overflow: hidden;
+  text-align: center;
+}
+.sc_testimonials_style {
+  position: relative;
+  margin: 0;
+  /*padding: 0 90px;*/
+}
+.sc_testimonials_style .sc_testimonials_title {
+  color: #ffffff;
+}
+.sc_testimonials ul {
+    list-style: none;
+}
+.sc_testimonials ul li {
+  padding-right: 5px !important;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  line-height: 21px;
+}
+.sc_testimonials_style .sc_testimonials_item_quote {
+  font-weight: 300;
+  position: relative;
+}
+.sc_testimonials_style .sc_testimonials_item_quote .sc_testimonials_item_text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  min-height: 22px;
+}
+.sc_testimonials_style .sc_testimonials_item_author {
+  display: inline-block;
+  text-align: left;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+.sc_testimonials ul li {
+  width: 100%;
+  padding-right: 5px !important;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  line-height: 21px;
+}
+.sc_testimonials_style .sc_testimonials_item_author .sc_testimonials_item_avatar {
+  width: 70px;
+  height: 70px;
+  float: left;
+  background-color: #fafafc;
+}
+.sc_testimonials_style .sc_testimonials_item_author .sc_testimonials_item_avatar img {
+  width: 100%;
+}
+.sc_testimonials_style .sc_testimonials_item_author .sc_testimonials_item_name {
+  margin: 0 0 0 85px;
+  padding: 10px 0 0 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.sc_testimonials_style .sc_testimonials_item_author .sc_testimonials_item_position {
+  color: #fff;
+  margin: 0 0 0 85px;
+  font-size: 12px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}    
+
+.sc_testimonials [class*="swiper-button-"] {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -35px;
+  font-size: 20px; }
+.sc_testimonials [class*="swiper-button-"]:before {
+  font-family: "fontello";
+  color: #fff;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  font-size: 9px;
+  margin: 0;
+  text-align: center;
+  line-height: 51px; }
+.sc_testimonials .swiper-button-prev:before {
+  content: '\e803';
+  left: 0; }
+.sc_testimonials .swiper-button-next:before {
+  content: '\e804';
+  right: 0; }
+.sc_testimonials [class*="swiper-button-"]:hover {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+/*---------------*/
+div#testimonial {
+	padding:4em 0;
+	text-align: center;
+	/*background:url(/web/20170715195550im_/http://www.ippai.org/img/background.jpg) no-repeat 0px 0px;*/
+	background-color:#B7AD70;
+	min-height:380px;
+	background-size:cover;
+}
+
+div#testimonial h3 {
+	font-size: 3em;
+    color: #5a6266;  
+    text-transform: capitalize;
+}
+
+#testimonial p {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;	
+	text-align: left;
+	line-height: 24px;
+	padding-top:21px;
+	padding-left:200px;
+}
+#testimonial span{color: #000;font-size:13px;float:right;text-align: right;padding-top: 25px;}
+#testimonial h4{
+	color: #fff;
+	font-size: 1.8em;
+	text-decoration: none;
+	font-weight: 600;
+	text-align: left;
+	margin-top: 1em;
+	
+}
+.test-monials {
+	margin-top: 3em;
+}
+.testimonialimg{float:left;border-radius: 50%;margin-bottom: 15px;border-radius: 50%;background: #f6f6f6;border: 1px solid #e9e9e9;padding: 10px;display: inline-block;}
+.texttestimonial{color: #000;border-bottom: 1px dotted #c7c7c7; padding-top: 15px;height:135px;text-align:justify;}
+.texttestimonial span{float:right;padding-top: 25px;font-size: 12px;}
+.texttestimonial span b{float:right;}
+.advisoryP{text-align:center;background-color: #fff;margin: 0px 0px 45px;min-height: 340px;}
+.advisoryP img{width:100%}
+.speakersDetailsP{text-align:center;background-color: #fff;}
+.speakersDetailsP img{float: left;width: 15%;padding: 15px;}
+.advisory_name{color:#d3363b;font-weight:500;}
+.advisory_deg{font-size:12px;}
+.desigtext{color:#d3363b;font-size:13px;display: inline-block;padding-bottom: 15px;}
+.desctext{text-align:justify;}
+.desctext p{margin:0px;}
+
+#eventShadow{border:1px solid #f1f1f1;padding: 0px !important; margin-bottom: 35px; -webkit-box-shadow: 1px 1px 1px 0px rgba(173,168,173,1); -moz-box-shadow: 1px 1px 1px 0px rgba(173,168,173,1); box-shadow: 1px 1px 1px 1px rgba(173,168,173,1);}
+#eventUppcomColor{padding: 10px;}
+#eventUppcomColor h2{color: #d3363b;padding-bottom: 15px;font-size:25px;}
+#eventUppcomColor p{margin:0px;}
+
+#eventPastShadow{border:1px solid #f1f1f1;padding: 0px !important; -webkit-box-shadow: 1px 1px 1px 0px rgba(173,168,173,1); -moz-box-shadow: 1px 1px 1px 0px rgba(173,168,173,1); box-shadow: 1px 1px 1px 1px rgba(173,168,173,1);}
+#eventPastColor{padding: 10px;}
+#eventPastColor h2{color: #000;padding-bottom: 15px;font-size:25px;}
+#eventPastColor p{margin:0px;}
+
+.eventsUpcomming{padding: 15px;border: 2px solid #d3363b;border-radius: 10px;min-height: 120px;}
+.eventsUpcomming p{color:#d3363b;font-weight: 600;font-size: 18px;text-align:center;line-height: 45px;margin:0px;font-family: 'Hammersmith One', sans-serif;letter-spacing: 1px;}
+.eventsUpcomming span{padding-top:10px;}
+
+.eventsPast{padding: 15px;border: 2px solid #acb4b6;border-radius: 10px;}
+.eventsPast p{color:#acb4b6;font-weight: 600;font-size: 18px;text-align:center;line-height: 45px;margin:0px;font-family: 'Hammersmith One', sans-serif;letter-spacing: 1px;}
+.eventsPast span{padding-top:10px;}
+
+
+
+.eventstxt{padding: 15px;border: 2px solid #acb4b6;border-radius: 10px;}
+.eventstxt p{color:#acb4b6;font-weight: 600;font-size: 22px;text-align:center;line-height: 45px;margin:0px;font-family: 'Hammersmith One', sans-serif;letter-spacing: 1px;}
+
+.eventSpeakers img{width:100px;height:120px;}
+
+.molli-grids {float: left;margin: 0px 21px 21px 0px;}
+.molli-grids img {/*margin: 15px 15px 15px 15px;*/}
+.rslides {position: relative;list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0;}
+.rslides li {-webkit-backface-visibility: hidden;position: absolute;display: none; width: 100%; left: 0; top: 0;}
+.rslides li{position: relative; display: block; float: left;}
+.rslides img { width:100%;}  
+
+
+
+
+/* Slider
+http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
+*/
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+.slider_container{ width:auto; margin:auto; clear:both;}
+
+
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%; margin: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.flexslider {position: relative; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+.flex-container {zoom: 1; position: relative;}
+
+
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background: #000;background: #d3363b;cursor: default;}
+
+
+/* Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+.slider_container{ width:100%; clear:both; background:none; padding-top: 121px !important;}
+.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
+.flex-caption { display:none;}
+}
+
+
+
+
+/* fade */
+.fadeIn{
+  opacity: 1;
+  transition-delay: .3s;
+}
+.fadeOut{
+  opacity: 0;
+}
+/* slideDown */
+.slideDownIn {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideDownOut {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* slideUp */
+.slideUpIn {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideUpOut {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* slideRight */
+.slideRightScaleDownIn {
+  -webkit-transform: translateX(0) scale(1);
+  -moz-transform: translateX(0) scale(1);
+  -ms-transform: translateX(0) scale(1);
+  -o-transform: translateX(0) scale(1);
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideRightScaleDownOut {
+  -webkit-transform: translateX(100%) scale(0.1) translateX(0);
+  -moz-transform: translateX(100%) scale(0.1) translateX(0);
+  -ms-transform: translateX(100%) scale(0.1) translateX(0);
+  -o-transform: translateX(100%) scale(0.1) translateX(0);
+  transform: translateX(100%) scale(0.1) translateX(0);
+  opacity: 0;
+}
+
+/* slideLeft */
+.slideLeftIn {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideLeftOut {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* slideRightToLeft */
+.slideRightIn {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideRightOut {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation-direction:alternate-inverse;
+  -moz-animation-direction:alternate-inverse;
+  animation-direction:alternate-inverse;
+  opacity: 0;
+}
+
+/* flip */
+.flipIn {
+  -webkit-transform: rotatey(0deg) scale(1);
+  -moz-transform: rotatey(0deg) scale(1);
+  -ms-transform: rotatey(0deg) scale(1);
+  -o-transform: rotatey(0deg) scale(1);
+  transform: rotatey(0deg) scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.flipOut {
+  -webkit-transform: rotatey(-90deg) scale(1.1);
+  -moz-transform: rotatey(-90deg) scale(1.1);
+  -ms-transform: rotatey(-90deg) scale(1.1);
+  -o-transform: rotatey(-90deg) scale(1.1);
+  transform: rotatey(-90deg) scale(1.1);
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+/* rotate */
+.rotateIn {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.rotateOut {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+  opacity: 0;
+}
+/* swingRight */
+.swingRightIn {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.swingRightOut {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+/* swingLeft */
+.swingLeftIn {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.swingLeftOut {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0;
+}
+/* scaleDown */
+.scaleDownIn {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.scaleDownOut {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(.3);
+  -moz-transform: scale(.3);
+  -ms-transform: scale(.3);
+  -o-transform: scale(.3);
+  transform: scale(.3);
+  opacity: 0;
+}
+/* scaleUp */
+.scaleUpIn {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.scaleUpOut {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+
+.newsbtn{margin: 0px;padding: 15px;text-align: center;font-size: 18px;font-weight: bold;background: #B7AD70;color: #fff;font-weight: bold;
+         -webkit-box-shadow: 1px 1px 1px 0px rgba(173,168,173,1); -moz-box-shadow: 1px 1px 1px 0px rgba(173,168,173,1); box-shadow: 1px 1px 1px 1px rgba(173,168,173,1);
+         }
+         
+/* IPPAI Calandar
+***********************/
+.ippai_Calandar .ajax__calendar_container
+{
+width:190px;
+    border-radius: 2px;
+    background: #f5f5f5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+    color: #333;
+    line-height:14px;
+}
+.ippai_Calandar .ajax__calendar_body
+{
+width:180px;
+
+}
+.ippai_Calandar .ajax__calendar_header
+{
+    background-color: #c71d22;
+    border: 1px solid #b11a1e;
+    padding: 0px 5px;
+    height: auto;
+    border-radius: 3px;
+ margin-bottom: 8px;
+} 
+.ippai_Calandar .ajax__calendar_title
+{
+    color: #fff;height:25px;padding-top:6px;
+}
+.ippai_Calandar .ajax__calendar_next,
+.ippai_Calandar .ajax__calendar_prev
+{
+    padding: 13px 0px;
+    background-size: 10px;
+}
+.ippai_Calandar .ajax__calendar_next
+{
+    background-image: url("/web/20170715195550im_/http://www.ippai.org/img/right.png");
+}
+
+.ippai_Calandar .ajax__calendar_prev
+{
+    background-image: url("/web/20170715195550im_/http://www.ippai.org/img/left.png");
+}
+.ippai_Calandar .ajax__calendar_hover .ajax__calendar_next,
+.ippai_Calandar .ajax__calendar_hover .ajax__calendar_prev
+{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    transition: all .3s ease;
+}
+
+
+
+.ippai_Calandar .ajax__calendar_dayname
+{
+text-align:center; margin-bottom: 4px; margin-top: 2px;
+color: #333;
+} 
+.ippai_Calandar .ajax__calendar_day
+{
+    width: 23px;
+    height: 21px;
+}
+.ippai_Calandar .ajax__calendar_day,
+.ippai_Calandar .ajax__calendar_month,
+.ippai_Calandar .ajax__calendar_year
+{
+margin:1px 1px 1px 1px;
+text-align:center;
+color:#333;
+border: 1px solid #ccc;
+background: #e5e5e5;
+}
+.ippai_Calandar .ajax__calendar_month,
+.ippai_Calandar .ajax__calendar_year
+{
+    width: 43px;
+}
+.ippai_Calandar .ajax__calendar_footer
+{
+    height: auto;
+}
+.ippai_Calandar .ajax__calendar_hover .ajax__calendar_day,
+.ippai_Calandar .ajax__calendar_hover .ajax__calendar_month,
+.ippai_Calandar .ajax__calendar_hover .ajax__calendar_year
+{
+color: #333; font-weight:bold; background-color: #328BC8;
+}
+.ippai_Calandar .ajax__calendar_active .ajax__calendar_day,
+.ippai_Calandar .ajax__calendar_active .ajax__calendar_month,
+.ippai_Calandar .ajax__calendar_active .ajax__calendar_year
+{
+    color: #fff; 
+    font-weight:bold;
+    background-color: #c71d22;
+    border: 1px solid #b11a1e;
+}
+.ippai_Calandar .ajax__calendar_today .ajax__calendar_day
+{
+color: #333; font-weight:bold; ; 
+}
+.ippai_Calandar .ajax__calendar_other,
+.ippai_Calandar .ajax__calendar_hover .ajax__calendar_today
+{
+color: #333;
+font-weight:bold;
+}
+.ippai_Calandar .ajax__calendar_days
+{
+    width: auto;
+}
+
+.ippai_Calandar .ajax__calendar_other{
+    overflow: hidden;
+}
+.ippai_Calandar .ajax__calendar_other> .ajax__calendar_day
+{
+        overflow: hidden;
+    color: #CCC6C6;
+    background: #EFE9E9;
+    border: 1px solid #DCD8D8;
+    font-weight: normal;
+    
+
+}
+/*---------------Start Forum ----------------*/    
+
+.padding-zero{
+    padding: 0px;
+}
+.padding-10{
+    padding: 10px;
+}
+.padding-0-3{
+    padding: 0px 3px;
+}
+.padding-5-10{
+    padding: 5px 10px;
+}
+.padding-5{
+    padding: 5px;
+}
+.padding-left{
+    padding-left: 10px;
+}
+.padding-right{
+    padding-right: 10px;
+}
+.padding-bottom{
+    padding: 10px;
+}
+.padding-top{
+    padding: 10px;
+}
+.width100
+{
+    width: 100%;
+}    
+.wrap {
+    /*width: 960px;*/
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 15px;
+    padding-bottom: 30px;
+    color: #515151;
+}
+p.searchbar {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    padding: 2px 0;
+    white-space: nowrap;
+}    
+.btnmain {
+    color: #ffffff;
+    font-weight: bold;
+    background: #c1002f;
+    border: 1px solid #990025;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 5px;
+}
+.genmed {
+    margin: 1px 1px;
+    font-size: 1.1em;
+}
+.tablebg {
+    background-color: #ECECEC;
+}
+.cat {
+    color: #515151;
+    height: 39px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #e9e9e9;
+    background-image: url('/web/20170715195550im_/http://www.ippai.org/images/cellpic1.gif');
+    text-indent: 8px;
+}     
+
+
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input {
+	background-color: #ffffff;
+	color: #515151;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 1px;
+	border: 1px solid #fff;
+	/*width:65%;*/
+}
+
+textarea {
+	background-color: #ffffff;
+	color: #515151;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em; 
+	line-height: 1.4em;
+	font-weight: normal;
+	border: 1px solid #e9e9e9;
+	padding: 2px;
+}
+
+select {
+	color: #515151;
+	background-color: #ffffff;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 1.1em;
+	font-weight: normal;
+	border: 0px solid #e9e9e9;
+	padding: 3px;
+}
+
+option {
+	padding: 0 1em 0 0;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+.rtl option {
+	padding: 0 0 0 1em;
+}
+
+input.radio {
+	margin-top: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: none;
+	background-color: transparent;
+}
+
+.post {
+	background-color: #ffffff;
+	background-image: none;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.btnbbcode {
+	color: #ffffff;
+	font-weight: bold;
+	background:#89c138;
+	border: 1px solid #6d9d29;
+	cursor: pointer;
+	font-size: 1.1em;
+	padding:5px;
+}
+
+.btnbbcode:hover {
+  	border: 1px solid #e9e9e9;
+	background:#4e7516;
+}
+
+.btnmain {
+	color: #ffffff;
+	font-weight: bold;
+	background:#c1002f;
+	border: 1px solid #990025;
+	cursor: pointer;
+	font-size: 1.1em;
+	padding:5px;
+}
+
+.btnmain:hover {
+	border: 1px solid #D60033;
+	background:#990025;
+}
+
+.btnlite {
+	color: #ffffff;
+	font-weight: normal;
+	background:#89c138;
+	border: 1px solid #6d9d29;
+	cursor: pointer;
+	font-size: 1.1em;
+	padding:3px;
+}
+
+.btnlite:hover {
+	border: 1px solid #e9e9e9;
+	background:#4e7516;
+}
+
+.pmbutton  {
+    overflow: visible;
+}
+
+.btnfile {
+	font-weight: normal;
+	background-color: #FFFFFF;
+	border: 1px solid #e9e9e9;
+	padding: 1px 5px;
+	font-size: 1.1em;
+}
+
+.helpline {
+	background-color: #ffffff;
+	border: 0px solid;
+}
+
+.tl {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/tl.png') no-repeat;
+}
+
+.tr {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/tr.png') no-repeat;
+}
+
+.ml {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/ml.png');
+}
+
+.bl {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/bl.png') no-repeat;
+}
+
+.br {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/br.png') no-repeat;
+}
+
+.mr {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/mr.png');
+}
+
+.rtl .tl {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/tr.png') no-repeat;
+}
+
+.rtl .tr {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/tl.png') no-repeat;
+}
+
+.rtl .ml {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/mr.png');
+}
+
+.rtl .bl {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/br.png') no-repeat;
+}
+
+.rtl .br {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/bl.png') no-repeat;
+}
+
+.rtl .mr {
+	background: url('/web/20170715195550im_/http://www.ippai.org/images/ml.png');
+}
+.row1 {
+    background-color: #f9f9f9;
+    padding: 8px;
+}
+
+
+/****Start of styles For IPPAI Social page tabs*****/
+
+
+.ListTopicsTable{ width:100%;border:none;font-size:11px; margin-top:10px;}
+.ListTopicsTable th{ text-align:left; padding:5px; border:none;background-color:#f5f5f5; color:#666;}
+
+
+.ListTopicsTable td{ text-align:left; padding:5px;border:none; vertical-align:top; border-bottom:1px solid #f5f5f5;}
+.ListTopicsTable td.AuthorPicName{ padding-right:10px;}
+.AuthorPicName a{padding-right: 15px;}
+.ListTopicsTable td.AuthorPicNameRight{ text-align:right; }
+.ListTopicsTable td.AuthorPicNameRight img{ padding-left:5px;}
+
+.ListTopicsTable td.Subject{ background-image:url(/web/20170715195550im_/http://www.ippai.org/css/images/social/topic-title.png); background-repeat:no-repeat; background-position:left 8px;
+                             font-size:12px; width:500px;}
+
+.ListTopicsTable td.ListTopicsAltRow { background-color:#F9F9F9;}
+
+.views{font-size:11px; margin-left: 10px;color: #333;font-weight: bold;}
+
+
+.people_thumb {height:22px; width:22px; vertical-align: middle;}
+.profile_thumb{ width:44px; padding:0 10px 10px 0; vertical-align: top; }
+.profile_topic_thumb{height:11px; width:11px; padding:0 5px 5px 5px; vertical-align: middle; }
+
+.profile_thumb_speaker{width:44px; padding:0 10px 10px 0; vertical-align: top; }
+
+.hidethisimage{ display:none;}
+
+.profileBoxStyle
+{   background:#222;
+    background:rgba(0, 0, 0, .5);                  
+                  
+                  width:230px;
+                  font-size:11px; 
+                  -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-khtml-border-radius:5px;
+                  
+                  
+                  }
+.profileBoxStyleinner{ margin:5px; background-color:#f1f1f1; padding:5px; }
+
+.conversationList{ margin:0 0 0 15px; padding:0; list-style:disc outside; font-family:Georgia; list-style-image:url(/web/20170715195550im_/http://www.ippai.org/css/images/bullet-style.png);  }
+.conversationList li{ padding:0 5px; margin:0; line-height:11px;}
+
+.discussionInfo 
+{
+    background-color:#F7FAFD; border: 1px solid #D3E2EE; padding:5px; margin-bottom:5px; font-size:12px; 
+    
+    }
+    
+.discussionDetails{ width:100%; background-color:#F9F9F9; margin-bottom:5px; border: 1px solid #D5E5F1;  }
+.discussionDetails td{ padding:10px;}
+.discussionDetails td.discussionDetailsLeft { width:100px; text-align:center; padding-right:0;vertical-align :top ;}
+.discussionDetails td.discussionDetailsRight{ padding-left:25px; background-image:url(/web/20170715195550im_/http://www.ippai.org/css/images/pointer2.png); background-repeat:no-repeat; background-position: -3px 35px;}
+.discussionDetails td.discussionDetailsRight1{ padding-left:25px; background-image:url(/web/20170715195550im_/http://www.ippai.org/css/images/pointer_2.png); background-repeat:no-repeat; background-position: -1px 35px;}
+.discussionConetent{ background-color:#EEF4F9; border:1px solid #c5d9e8; padding:10px;
+                      -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-khtml-border-radius:10px;
+                     }
+.discussionConetent p.discussionTitle{ font-size:13px; font-weight:bold; margin:10px 0; }
+.discussionConetentAuthor 
+{
+    background-image:url(/web/20170715195550im_/http://www.ippai.org/css/images/social/discussionContent.png); background-repeat:no-repeat; background-position:right top;   
+    background-color:#F9F9F9; border:1px solid #c5d9e8; padding:10px;
+                      -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-khtml-border-radius:10px;}
+	
+	
+	.discussionConetentAuthor1
+{
+    background-image:url(/web/20170715195550im_/http://www.ippai.org/css/images/social/discussionContent.png); background-repeat:no-repeat; background-position:right top;   
+    background-color:#F9F9F9; border:1px solid #c1002f; padding:10px;
+                      -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-khtml-border-radius:10px;}
+	
+	.discussionConetentAuthor1 p.discussionTitle{ padding-right:100px;font-size:16px; border-bottom:  1px dotted #BBB; margin:10px 0; padding-bottom:10px;color:#888787;  }
+	
+.discussionConetentAuthor p.discussionTitle{ padding-right:100px;font-size:16px; border-bottom:  1px dotted #BBB; margin:10px 0; padding-bottom:10px; }
+
+.dottedLine{margin:10px 0px;border-bottom:1px dotted #BBBBBB;}
+.replybuttonContainer
+{
+    margin: 5px 20px 25px 10px;
+}
+.replybuttonContainer a{color:#355491;font-size:10px;float:right;text-decoration:none; padding:0 10px;}
+
+.replybuttonContainer a:hover{text-decoration:underline;}
+/****end of styles For IPPAI Social page tabs*****/
+
+/*---------------End Forum ----------------*/
+/*tab heading */
+ul,ol{ list-style:none outside none;}
+p{margin: 0 0 20px;}
+.tabs {  overflow:hidden; }
+.tabs li{float:left;}
+.tabs li active{ float:left;color:#f55858; }
+.tabs li a{ font-size: 38px;color: #fff;display: inline-block;width: 114px;height: 114px;line-height: 108px;border-radius: 50%; }
+.tabs li:first-child a{ border-left: none; }
+.tabs li a:hover, .tabs li a:focus{ color:#D54E21; }
+.tabs .active a{ color: #f55858; background-color: #B7AD70 !important;}
+
+/* == accordion */
+
+.accordion_tabs { display:none; border-top: 1px solid #ccc; padding: 10px; font-weight: bold; background: #eee; }
+.tab_content_wrapper > .accordion_tabs:first-child{ border-top:none; }
+a.accordion_tabs:link, a.accordion_tabs:visited{ color: #21759B; }
+a.accordion_tabs:hover, a.accordion_tabs:focus{ color:#D54E21; }
+a.accordion_tabs.active{ color: #000; border-bottom: 1px solid #ccc;}
+
+/*  == tab content  */
+.tab_content_wrapper{ overflow:hidden;  position:relative; transition: all .3s ease-in-out .3s; }
+.tab_content{ transition: all .6s ease-in-out; padding:15px; background:#fff;}
+.toggle_display{display:block;padding-top: 50px;}
+.toggle_position{ position:absolute;width:99%; }
+.toggle_border{ /*border:1px solid #ccc; border-width: 0 1px 1px 1px; */}
+.invert_border{ border-width: 1px 1px 0 1px;}
+.btnSubscribe{    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    background-color: #ACB4B6;
+    border-radius: 31px;
+    display: inline-table;
+    color: #fff;
+    margin-left: 170px;
+}
+
+ .sc_column1{text-align: left; margin-bottom: 10px;}
+.sc_column1.last{ margin-bottom: 20px; }
+
+.sc_column1 h5{font-size: 14px !important;line-height: 19px; padding: 0px 0 8px 0;font-weight: 700 !important; text-transform: uppercase;  letter-spacing: 1px;}
+.sc_column1 a {font-size: 14px; color: #000; text-align: left; display: block;background: url("/web/20170715195550im_/http://www.ippai.org/img/icons.png") no-repeat 0 -78px;padding-left:20px;line-height: 27px;}
+
+
+.txtSubscribe{
+    width: 165%;
+    height: 50px;
+    padding: 6px 12px;    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    
+    }
+ 
+ 
+ 
+ 
+ 
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 600px) {
+  #container{ width:90%; padding:40px 20px; }
+  .accordion_tabs{ display:none; }
+  .tab_content_wrapper{ height:auto !important;}
+  .tab_content{ transition:none; padding:10px;}
+  .toggle_display{display:block;}
+  .toggle_position{ position:relative; }
+  .toggle_border{ border-width: 1px; }
+  .tabs.articles li a{font-size:10px !important;padding: 10px 5px 10px 5px !important;}
+  .tabs.articles li{}
+}
+@media(max-width:736px)
+{
+    .tabs.articles li a{font-size:12px !important;padding: 10px 5px 10px 5px !important;}
+}
+/*@media(max-width:426px)
+{
+    .tabs.articles li{width:28%;}    
+}
+@media(max-width:320px)
+{
+    .tabs.articles li{width:30%;}    
+} */
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 19:55:50 Jul 15, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:32:30 Mar 11, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.579
+  exclusion.robots: 0.023
+  exclusion.robots.policy: 0.011
+  esindex: 0.012
+  cdx.remote: 8.827
+  LoadShardBlock: 218.318 (3)
+  PetaboxLoader3.datanode: 96.457 (4)
+  PetaboxLoader3.resolve: 268.525 (2)
+  load_resource: 175.351
+*/
