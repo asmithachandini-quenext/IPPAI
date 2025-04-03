@@ -97,6 +97,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: contain; /* Ensures the entire image fits within the circle */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .service-title {
@@ -124,8 +127,8 @@
 /* LEFT COLUMN - WHAT'S NEW */
 .whats-new {
   width: 30%;
-  padding: 15px;
-  height: 320px;
+  padding: 20px;
+  height: 350px;
   border-radius: 5px;
   color: #fff;
   border: 1px solid #ccc;
@@ -313,7 +316,6 @@
 
 .video-container {
   padding: 20px;
-  border: 1px solid #ddd;
 }
 
 .video-tabs {

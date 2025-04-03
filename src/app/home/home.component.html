@@ -185,10 +185,11 @@
 
     <div class="services-grid">
       <div class="service-item" *ngFor="let item of services">
-        <div class="service-icon"></div>
+        <div class="service-icon" [ngStyle]="{ 'background-image': 'url(' + item.image + ')' }"></div>
         <p class="service-title">{{ item.title }}</p>
       </div>
     </div>
+
   </div>
   <br>
   <!-- <div class="container">
@@ -255,13 +256,13 @@
     <div class="whats-new">
       <h2>WHAT'S NEW</h2>
       <div class="whats-new-content">
-        <p><strong>IPPAL Punjab & Haryana Power Conclave 2025</strong></p>
-        <p>Date: <span style="color: red;">19 July 2025</span></p>
-        <p>Venue: <span style="color: red;">CII Hall, Chandigarh</span></p>
+        <p><strong>Batch 3- Intensive Course on Regulatory & Policy Framework in the Power Sector</strong></p>
+        <p>Date: <span style="color: red;">April 24th- 26th, 2025</span></p>
+        <p>Venue: <span style="color: red;">Shoonya Farm Retreat, Belgundi, Karnataka</span></p>
         <hr>
-        <p><strong>The 18th Regulators & Policymakers Retreat 2025</strong></p>
-        <p>Date: <span style="color: red;">26 - 29 Oct 2025</span></p>
-        <p>Venue: <span style="color: red;">Karnataka, India</span></p>
+        <p><strong>26th Regulators & Policymakers Retreat</strong></p>
+        <p>Date: <span style="color: red;">To Be Announced Soon</span></p>
+        <p>Venue: <span style="color: red;">Shoonya Farm Retreat, Belgundi, Karnataka</span></p>
       </div>
     </div>
 
@@ -307,22 +308,29 @@
             Procurement to Make 24/7
             Power Supply a Reality</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article10.pdf')">Driving the Off-Grid Revolution</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article16.pdf')">Biomass Based Power Generation Opportunities and the Role of
+          <a href="javascript:void(0);" (click)="openPdf('article16.pdf')">Biomass Based Power Generation Opportunities
+            and the Role of
             Independent Power Producers in India</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article17.pdf')">24x7 power supply critical to
             maintaining high growth</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article18.pdf')">Hydropower development
             in India: Untapped and
             in uncharted territory</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article20.pdf')">Future Shock! The Indian Power Sector</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article21.pdf')">The 'business as usual' hurting Indian power sector</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article20.pdf')">Future Shock! The Indian Power
+            Sector</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article21.pdf')">The 'business as usual' hurting Indian power
+            sector</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article22.pdf')">Certainty of Uncertainty in Power</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article23.pdf')">All Charged Up and Nowhere to Go!</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article24.pdf')">Fostering competition in Gas Markets</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article26.pdf')">Clarity in Fiscal Policy on Mineral Oil and Natural Gas</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article24.pdf')">Fostering competition in Gas
+            Markets</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article26.pdf')">Clarity in Fiscal Policy on Mineral Oil and
+            Natural Gas</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article28.pdf')">Water Smart</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article30.pdf')">Should the power sector be federalized ?</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article31.pdf')">Operational & Commercial Issues for Power Plants to be set up in India</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article30.pdf')">Should the power sector be federalized
+            ?</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article31.pdf')">Operational & Commercial Issues for Power
+            Plants to be set up in India</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article32.pdf')">Wind Power Development in India</a><br><br>
           <!-- <a href="#" class="view-all-btn">View All</a> -->
           <h3>SOCIO-ECONOMIC NARRATIVES</h3>
@@ -343,8 +351,10 @@
             Coastal Thermal Power Plants</a><br><br>
           <a href="javascript:void(0);" (click)="openPdf('article15.pdf')">THE NATIONAL SOLAR ENERGY MISSION</a><br><br>
           <h3>Energy Security</h3>
-          <a href="javascript:void(0);" (click)="openPdf('article25.pdf')">Energy Security in South Asia: Bangladesh Perspective</a><br><br>
-          <a href="javascript:void(0);" (click)="openPdf('article27.pdf')">Geopolitics of Energy: An Indian Perspective</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article25.pdf')">Energy Security in South Asia: Bangladesh
+            Perspective</a><br><br>
+          <a href="javascript:void(0);" (click)="openPdf('article27.pdf')">Geopolitics of Energy: An Indian
+            Perspective</a><br><br>
         </div>
 
 
@@ -386,23 +396,57 @@
         </div>
 
         <div *ngIf="activeTab === 3" class="video-container">
-
           <div class="video-tabs">
-            <span [class.active]="selectedTab === 'parleys'" (click)="changeTab('parleys')">IPPAI Power Parleys</span>
-            <span [class.active]="selectedTab === 'events'" (click)="changeTab('events')">IPPAI Events</span>
-            <span [class.active]="selectedTab === 'films'" (click)="changeTab('films')">Films</span>
+            <span [class.active]="selectedTab === 'events'" (click)="selectedTab = 'events'">IPPAI Events</span>
+            <span [class.active]="selectedTab === 'films'" (click)="selectedTab = 'films'">Films</span>
           </div>
 
-          <div class="video-list">
-            <div *ngFor="let video of videos[selectedTab].slice(0, 3)" class="video-item">
-              <iframe [src]="video.url" width="300" height="200" frameborder="0" allowfullscreen>
-              </iframe>
+          <div class="video-list" *ngIf="selectedTab === 'events'">
+            <div class="video-item">
+              <iframe width="350" height="300" src="https://www.youtube.com/embed/t0xpONXNBW4"
+                title="EXPANDING IMAGINATIONS - PART 1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+              <iframe width="350" height="300" src="https://www.youtube.com/embed/p2j_FGj0qlw"
+                title="EXPANDING IMAGINATIONS - PART 2" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
 
-          <button class="view-more-btn" (click)="viewMore()">View More</button>
-
+          <div class="video-list" *ngIf="selectedTab === 'films'">
+            <div class="video-item">
+              <iframe width="150" height="200" src="https://www.youtube.com/embed/0sGBbuvTe3g"
+                title="11th IPPAI Regulators &amp; Policy Makers Retreat Part One.flv" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+              <iframe width="150" height="200" src="https://www.youtube.com/embed/5qEdepmtwXM"
+                title="Mr. Nitin Gadkari, Hon’ble Minister of Road Transport and Highways of India - RPR 2016"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+              <iframe width="150" height="200" src="https://www.youtube.com/embed/IEhBRVadTX0"
+                title="25th Regulators &amp; Policymakers Retreat || IPPAI || Shoonya Retreat || 11th Jan 2025"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+              <iframe width="150" height="200"
+                src="https://www.youtube.com/embed/_aeYoWCaMFY?list=PLzOzSMkkiKvXe6Zf7bFTYNAh5yyYySCF2"
+                title="24th Regulatory and Policymakers Retreat" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -455,6 +499,6 @@
       </div>
     </div>
   </div>
-  
+
   <app-footer></app-footer>
   <router-outlet></router-outlet>

@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, Sanitizer, SecurityContext, ViewChild } from '@angular/core';
 import { NewsService } from '../news.service';
 import { Router } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,11 +11,11 @@ import { Router } from '@angular/router';
 export class HomeComponent implements AfterViewInit {
   currentIndex = 0;
   interval: any;
-  selectedTab: 'parleys' | 'events' | 'films' = 'parleys'; // Explicit type
+  selectedTab:  'events' | 'films' = 'events';
   activeTab = 0;
   @ViewChild('newsList') newsList!: ElementRef;
 
-  constructor(private newsService: NewsService, private sanitizer: Sanitizer, private router: Router) {
+  constructor(private newsService: NewsService, private router: Router, private sanitizer: DomSanitizer) {
     this.autoSlide();
 
   }
@@ -105,7 +106,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   images = [
-    'assets/images/banner6.jpg',
+    'assets/images/IRPRI Banner Website.png',
     'assets/images/banner1.jpg',
     'assets/images/banner4.jpg',
     'assets/images/banner3.jpg',
@@ -131,11 +132,11 @@ export class HomeComponent implements AfterViewInit {
   }
 
   services = [
-    { title: 'KNOWLEDGE EVENTS' },
-    { title: 'RESEARCH AND REPORTS' },
-    { title: 'POLICY RECOMMENDATIONS' }
+    { title: 'KNOWLEDGE EVENTS', image: 'assets/images/Knowledge_Events_logo.png' },
+    { title: 'RESEARCH AND REPORTS', image: 'assets/images/Research.png' },
+    { title: 'POLICY RECOMMENDATIONS', image: 'assets/images/Policy_Recommendation.png' }
   ];
-
+  
   openPdf(fileName: string) {
     const url = `/view-pdf/${fileName}`;
     window.open(url, '_blank'); // Opens in a new tab
@@ -144,23 +145,13 @@ export class HomeComponent implements AfterViewInit {
   tabs = ["POWER NEWS", "ARTICLES", "WATTS OF WISDOM", "VIDEO"];
 
   videos = {
-    parleys: [
-      { url: 'https://www.youtube.com/embed/video1' },
-      { url: 'https://www.youtube.com/embed/video2' },
-      { url: 'https://www.youtube.com/embed/video3' },
-      { url: 'https://www.youtube.com/embed/video4' }
-    ],
     events: [
       { url: 'https://www.youtube.com/embed/video5' },
-      { url: 'https://www.youtube.com/embed/video6' },
-      { url: 'https://www.youtube.com/embed/video7' },
-      { url: 'https://www.youtube.com/embed/video8' }
+      { url: 'https://www.youtube.com/embed/video6' }
     ],
     films: [
       { url: 'https://www.youtube.com/embed/video9' },
-      { url: 'https://www.youtube.com/embed/video10' },
-      { url: 'https://www.youtube.com/embed/video11' },
-      { url: 'https://www.youtube.com/embed/video12' }
+      { url: 'https://www.youtube.com/embed/video10' }
     ]
   };
 
@@ -168,7 +159,7 @@ export class HomeComponent implements AfterViewInit {
     this.activeTab = index;
   }
 
-  changeTab(tab: 'parleys' | 'events' | 'films') {
+  changeTab(tab:  'events' | 'films') {
     this.selectedTab = tab;
   }
 
@@ -176,8 +167,8 @@ export class HomeComponent implements AfterViewInit {
     console.log('View More clicked for:', this.selectedTab);
   }
 
-  getSafeUrl(url: string) {
-    return this.sanitizer.sanitize(SecurityContext.URL, url);
+  getSafeUrl(url: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   gotoRPR() {
